@@ -20,7 +20,8 @@ function App() {
 
   return (
     <ThemeProvider theme = {theme}>
-    <Header></Header>
+    <Header>
+    </Header>
     </ThemeProvider>
   );
 }
