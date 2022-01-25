@@ -4,12 +4,14 @@ const discussionBoard = [
         title: 'Scary Images',
         description: '[Filler Content]',
         image: 'NO IMAGE',
+        link: 'http://birdsuphotels.com'
     },
     {
         id: 2,
         title: 'Happy Images',
         description: '[Filler Content]',
         image: 'NO IMAGE',
+        link: 'http://birdsuphotels.com'
     }
 ]
 

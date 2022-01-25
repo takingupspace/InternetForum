@@ -4,14 +4,17 @@ export default function Board({item:{
     id,
     title,
     description,
-    image
+    image,
+    link
 }
 
 }){
     return(
-        <StyledBoard layout={id == 2 && 'row-reverse'}>
+        <StyledBoard layout={id % 2 === 0 && 'row-reverse'}>
             <div>
+                <a href={link}>
                 <h1>{title}</h1>
+                </a>
                 <p>{description}</p>
             </div>
             <div>
