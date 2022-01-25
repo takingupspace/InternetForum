@@ -3,6 +3,9 @@ import './App.css';
 import TextArea from './components/TextArea';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
+import { StyledContainer } from './components/styles/Container.styled';
+import discussionBoard from './discussion.boards';
+import Board from './components/Board';
 
 const theme = {
   colors: {
@@ -20,8 +23,12 @@ function App() {
 
   return (
     <ThemeProvider theme = {theme}>
-    <Header>
-    </Header>
+    <Header />
+    <StyledContainer>
+    {discussionBoard.map((item, index) => (
+      <Board key={index} item={item}/>
+    ))}
+    </StyledContainer>
     </ThemeProvider>
   );
 }

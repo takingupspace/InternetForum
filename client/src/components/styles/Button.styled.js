@@ -14,6 +14,6 @@ export const StyledButton = styled.button`
     &:hover{
         background-color: ${({theme}) => theme.colors.header};
         opacity: 0.8;
-        transform: scale(0.87);
+        transform: scale(0.90);
     }
 `
