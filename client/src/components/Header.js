@@ -3,6 +3,7 @@ import { StyledContainer } from "./styles/Container.styled";
 import { StyledNav } from "./styles/Nav.styled";
 import { StyledButton } from "./styles/Button.styled";
 import { StyledFlex } from "./styles/Flex.styled";
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return(
@@ -10,7 +11,9 @@ export default function Header(){
         <StyledHeader>
             <StyledContainer>
                 <StyledNav>
-                <StyledButton>LOGIN</StyledButton>
+                <Link to="/"><StyledButton>Home</StyledButton></Link>
+                <Link to="/About"><StyledButton>About</StyledButton></Link>
+                <StyledButton>Login</StyledButton>
                 </StyledNav>
                 <StyledFlex>
                     <div>

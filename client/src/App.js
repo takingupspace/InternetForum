@@ -6,8 +6,10 @@ import Header from './components/Header';
 import { StyledContainer } from './components/styles/Container.styled';
 import discussionBoard from './discussion.boards';
 import Board from './components/Board';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from './pages/Home';
+import ErrorPage from './pages/ErrorPage';
+import Profile from './pages/ProfilePage';
 const theme = {
   colors: {
     header: '#778899',
@@ -23,13 +25,16 @@ const theme = {
 function App() {
 
   return (
-    <>
     <Router>
+      <ThemeProvider theme = {theme}>
+      <Header />
     <Routes>
       <Route path="/" element={<Home />}/>
+      <Route path="*" element={<ErrorPage />}/>
+      <Route path="/profile/:username" element={<Profile />}/>
       </Routes>
+      </ThemeProvider>
       </Router>
-    </>
   );
 }
 
