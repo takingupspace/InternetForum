@@ -1,7 +1,11 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function Discussion(){
-    return <div>Discussion Page</div>
+    let {id} = useParams();
+    return (
+        <h1>This is the discussion page for thread # {id}</h1>
+    )
 }
 
 export default Discussion;

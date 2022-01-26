@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import TextArea from './components/TextArea';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
-import { StyledContainer } from './components/styles/Container.styled';
-import discussionBoard from './discussion.boards';
-import Board from './components/Board';
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import Profile from './pages/ProfilePage';
+import Discussion from './pages/Discussion';
 const theme = {
   colors: {
     header: '#778899',
@@ -32,6 +29,7 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="*" element={<ErrorPage />}/>
       <Route path="/profile/:username" element={<Profile />}/>
+      <Route path="/discussion/:id" element={<Discussion/>}/>
       </Routes>
       </ThemeProvider>
       </Router>

@@ -4,15 +4,14 @@ export default function Board({item:{
     id,
     title,
     description,
-    image,
-    link
+    image
 }
 
 }){
     return(
         <StyledBoard layout={id % 2 === 0 && 'row-reverse'}>
             <div>
-                <a href={link}>
+                <a href={`/discussion/${id}`}>
                 <h1>{title}</h1>
                 </a>
                 <p>{description}</p>

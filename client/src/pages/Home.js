@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import { StyledContainer } from "../components/styles/Container.styled";
 import discussionBoard from "../discussion.boards";
 import Board from "../components/Board";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom';
+import Discussion from "./Discussion";
 
 function Home(){
     return (
