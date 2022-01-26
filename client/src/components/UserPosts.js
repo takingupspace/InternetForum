@@ -5,17 +5,17 @@ export default function UserPosts({
     {
         userThreadId,
         title,
-        subject,
-        image,
-        link
-    }
+        postAuthor,
+    },
 }){
     return(
         <StyledUserPosts>
         <div>
+            <a href={`/discussion/0/${userThreadId}`}>
             <h1>{title}</h1>
+            </a>
             <div>
-                <p>{subject}</p>
+                <p><em>Original Poster:</em> <strong>{postAuthor}</strong></p>
             </div>
         </div>
         </StyledUserPosts>

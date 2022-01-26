@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import Profile from './pages/ProfilePage';
 import Discussion from './pages/Discussion';
+import UserThread from './components/Threads';
+import UserThreadPage from './pages/UserThreadPage';
 const theme = {
   colors: {
     header: '#778899',
@@ -30,6 +32,7 @@ function App() {
       <Route path="*" element={<ErrorPage />}/>
       <Route path="/profile/:username" element={<Profile />}/>
       <Route path="/discussion/:id" element={<Discussion/>}/>
+      <Route path="/discussion/:id/:userThreadId" element={<UserThreadPage />}/>
       </Routes>
       </ThemeProvider>
       </Router>

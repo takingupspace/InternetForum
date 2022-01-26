@@ -10,18 +10,28 @@ const discussionBoard = [
             {
                 userThreadId: 0,
                 title: 'Scary Movie (The original)',
-                subject: "This really isn't a scary movie, but it's definitely my favorite Scary Movie! Hah, " +
-                "No pun intended",
-                image: 'NO IMAGE',
-                link: 'NO LINK'
+                postAuthor: 'Tupac Shakur',
+                post: [
+                    {
+                        subject: "This really isn't a scary movie, but it's definitely my favorite Scary Movie! Hah, " +
+                        "No pun intended",
+                        image: 'NO IMAGE',
+                        link: 'NO LINK',
+                    }
+                ]
             },
             {
-                userThreadId: 0,
+                userThreadId: 1,
                 title: 'Tremors',
-                subject: "Classic movie of course! How can you not like this one! A little cursing, but hey it's still " +
-                "all good family fun!",
-                image: 'NO IMAGE',
-                link: 'NO LINK'
+                postAuthor: 'Christopher Wallace',
+                post: [
+                    {
+                        image: 'NO IMAGE',
+                        link: 'NO LINK',
+                        subject: "Classic movie of course! How can you not like this one! A little cursing, but hey it's still " +
+                        "all good family fun!",
+                    }
+                ]
             }
         ]
     },
