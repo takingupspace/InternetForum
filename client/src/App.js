@@ -6,7 +6,8 @@ import Header from './components/Header';
 import { StyledContainer } from './components/styles/Container.styled';
 import discussionBoard from './discussion.boards';
 import Board from './components/Board';
-
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home';
 const theme = {
   colors: {
     header: '#778899',
@@ -22,14 +23,13 @@ const theme = {
 function App() {
 
   return (
-    <ThemeProvider theme = {theme}>
-    <Header />
-    <StyledContainer>
-    {discussionBoard.map((item, index) => (
-      <Board key={index} item={item}/>
-    ))}
-    </StyledContainer>
-    </ThemeProvider>
+    <>
+    <Router>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      </Routes>
+      </Router>
+    </>
   );
 }
 
