@@ -7,11 +7,12 @@ export default function UserPosts({
         title,
         postAuthor,
     },
+    id
 }){
     return(
         <StyledUserPosts>
         <div>
-            <a href={`/discussion/0/${userThreadId}`}>
+            <a href={`/discussion/${id}/${userThreadId}`}>
             <h1>{title}</h1>
             </a>
             <div>

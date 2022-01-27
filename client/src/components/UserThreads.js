@@ -12,8 +12,12 @@ export default function UserThreads({
         <StyledUserThread>
             <div>
                 <h1>{subject}</h1>
+                <div>
                 {image}
+                </div>
+                <div>
                 {link}
+                </div>
             </div>
         </StyledUserThread>
     )

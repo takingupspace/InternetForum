@@ -6,6 +6,7 @@ import UserPosts from './UserPosts';
 import ErrorPage from '../pages/ErrorPage';
 
 function Posts(props){
+    //console.log('id in Posts is ' + props.discussionNumber)
     if(!props.id){
         return (
             <ErrorPage/>
@@ -14,7 +15,7 @@ function Posts(props){
     return (
         <StyledContainer>
             {props.id.map((item, index) => (
-                <UserPosts key={index} item={item}/>
+                <UserPosts key={index} item={item} id={props.discussionNumber}/>
             ))}
         </StyledContainer>
     )

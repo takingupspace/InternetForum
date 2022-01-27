@@ -4,7 +4,7 @@ import { StyledContainer } from "./styles/Container.styled";
 import UserThreads from "./UserThreads";
 
 function Threads(props){
-    console.log(props)
+    console.log('discussion number = ' + props.discussionNumber)
     if(!props.id){
         return(
             <ErrorPage/>

@@ -12,7 +12,7 @@ function Discussion(props){
         <StyledContainer>
         <h1>This is the discussion page for thread # {id}</h1>
         <p>{discussionBoard[id].discussionBody}</p>
-        <Posts id={discussionThreads}/>
+        <Posts id={discussionThreads} discussionNumber={id}/>
         </StyledContainer>
         </>
     )
