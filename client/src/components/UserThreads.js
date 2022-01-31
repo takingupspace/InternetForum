@@ -1,4 +1,7 @@
+import { StyledBoard } from "./styles/Board.styled";
+import { StyledButton } from "./styles/Button.styled";
 import { StyledUserThread } from "./styles/Thread.styled";
+import TextArea from "./TextArea";
 
 export default function UserThreads({
     item:
@@ -9,6 +12,7 @@ export default function UserThreads({
     }
 }){
     return(
+        <>
         <StyledUserThread>
             <div>
                 <h1>{subject}</h1>
@@ -20,5 +24,11 @@ export default function UserThreads({
                 </div>
             </div>
         </StyledUserThread>
+        <div>
+        <TextArea>
+        </TextArea>
+        <StyledButton>Submit Post</StyledButton>
+        </div>
+        </>
     )
 }
